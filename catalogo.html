@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<!--head-->
+<head>
+	<!--responsive metatag-->
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Sito che raccoglie testimonianze sulla vita e sull'attività politica di Vittorina Del Monte"/>    
+	<meta name="keywords" content="Vittorina Del Monte, archivio"/>
+	<meta name="author" content="Giorgia Clemente"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="stilehomevdm.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Port+Lligat+Slab&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:wght@700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Port+Lligat+Slab&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	
+	<title>Vittorina Dal Monte - Archivio storico</title>
+	<!--favicon personalizzato-->
+	<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+</head>
+
+<body id="catalogo">
+  <div class="page-container">
+    <div class="content-wrap">
+
+    <nav class="navbar navbar-expand-sm bg-white sticky-top">
+      <a class="navbar-brand navbar-logo ml-3" href="index.html">VITTORINA DAL MONTE</a>
+      <ul class="navbar-nav ml-auto m-3">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">IL PROGETTO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="catalogo.html">CATALOGO</a>
+        </li>
+        <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbardrop">NAVIGA PER</a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="#">Luoghi</a>
+            <a class="dropdown-item" href="#">Date</a>
+          </div>
+        </li>
+      </ul>
+    <div class="ms-auto d-flex align-items-center mt-4 mb-5">
+    <!-- Campo di ricerca nascosto -->
+      <form id="search-form" class="d-none me-3">
+      <input class="form-control" type="search" placeholder="Cerca" aria-label="Search">
+      </form>
+
+    <!-- Icona lente -->
+      <button id="toggle-search" class="btn btn-outline-secondary">
+      <i class="bi bi-search"></i>
+      </button>
+    </div>
+    </nav>
+
+    <div class="container-fluid">
+    <div class="row">
+    <!-- Colonna sinistra -->
+    <div class="col-md-2">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Catalogo</li>
+        </ol>
+      </nav>
+    
+      <div class="vertical-menu">
+      <a href="#" class="active">CATALOGO COMPLETO</a>
+      <a href="#">IL PARTITO</a>
+      <a href="#">UDI</a>
+      <a href="#">PARTIGIANA</a>
+      <a href="#">SINDACALISTA</a>
+      <a href="#">FEMMINISTA</a>
+      </div>
+    </div>
+
+    <!-- Colonna destra -->
+    <div class="col-md-10">
+    <div class="row">
+    <!-- Tab links -->
+    <div class="col-12 mb-4">
+    <div class="tab d-flex justify-content-center">
+      <button class="tablinks active" onclick="openDoctype(event, 'All')">TUTTI</button>
+      <button class="tablinks" onclick="openDoctype(event, 'Photos')">FOTO</button>
+      <button class="tablinks" onclick="openDoctype(event, 'Video')">VIDEO</button>
+      <button class="tablinks" onclick="openDoctype(event, 'Text')">TESTO</button>
+      <button class="tablinks" onclick="openDoctype(event, 'Posters')">MANIFESTO</button>
+    </div>
+    </div>
+
+      <!-- Card 1 -->
+      <div class="col-md-4 card-container Video" data-categoria="partito">
+        <div class="card">
+          <img src="catalogo.img/Fondazione PCI.png" class="card-img-top fixed-img" alt="Anteprima Video fondazione PCI">
+        <div class="card-body">
+          <h5 class="card-title">
+          <a href="https://archivio.quirinale.it/aspr/gianni-bisiach/AV-002-000357/21-gennaio-1921-livorno-fondazione-partito-comunista" target="_blank">Fondazione del PCI</a></h5>
+          <p class="card-text">21 gennaio 1921, Livorno: si costituisce il PCI, di cui Vittorina Dal Monte farà parte a vita.</p>
+            <p><strong>Tipo di oggetto:</strong> Video</p>
+            <p><strong>Data di trasmissione:</strong> 21/01/2002</p>
+            <p><strong>Regia:</strong><a href="https://viaf.org/viaf/61561815" target="_blank"> Gianni Bisiach<sup>VIAF</sup></a></p>
+          <a href="#" class="btn btn-primary">Apri</a>
+        </div>
+        </div>
+      </div>
+
+      <!--Card 2-->
+      <div class="col-md-4 card-container Video" data-categoria="partigiana">
+        <div class="card">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item"
+            src="https://www.youtube.com/embed/8NHZlfzuyFw?rel=0"
+            allowfullscreen></iframe>
+          </div>
+        <div class="card-body">
+          <h5 class="card-title">La Pasionaria a Parigi</h5>
+          <p class="card-text">Comizio di Dolores Ibàrruri a Parigi. Questo discorso convincerà Vittorina a impegnarsi nella politica.</p>
+          <p><strong>Tipo di oggetto:</strong> Video</p>
+          <p><strong>Data:</strong> 08/09/1936</p>
+          <p><strong>Soggetto:</strong><a href="http://viaf.org/viaf/109366304" target="_blank"> Dolores Ibàrruri<sup>VIAF</sup></a></p>
+          <a href="#" class="btn btn-primary">Apri</a>
+        </div>
+        </div>
+      </div>      
+
+      <!--card 3-->
+      <div class="col-md-4 card-container Photos" data-categoria="partigiana">
+        <div class="card">
+          <img src="catalogo.img/tessera partigiana.jpg" class="card-img-top fixed-img" alt="Foto tessera riconoscimento partigiana">
+        <div class="card-body">
+          <h5 class="card-title">Scheda personale partigiana</h5>
+          <p class="card-text">Scheda di riconoscimento della qualifica di Partigiana Combattente della Resistenza.</p>
+          <p><strong>Tipo di oggetto:</strong> Testo</p>
+          <p><strong>Data:</strong> 1945</p>
+          <p><strong>Formazione:</strong> SAP Imola</p>
+          <a href="#" class="btn btn-primary">Apri</a>
+        </div>
+        </div>
+      </div>      
+
+      <!--Card 4-->
+      <div class="col-md-4 card-container Photos" data-categoria="partigiana">
+        <div class="card">
+          <img src="catalogo.img/bimbi_treni.png" class="card-img-top fixed-img" alt="Foto di gruppo bambini ospitati">
+        <div class="card-body">
+          <h5 class="card-title">I treni della felicità</h5>
+          <p class="card-text">Movimento per la salvezza dei bambini d'Italia: un gruppo di bambini con la famiglia d'accoglienza.</p>
+          <p><strong>Tipo di oggetto:</strong> Foto</p>
+          <p><strong>Data:</strong> 1946</p>
+          <p><strong>Conservazione:</strong><a href="http://viaf.org/viaf/155826643" target="_blank"> Archivio Unione Donne Italiane<sup>VIAF</sup></a></p>
+          <a href="#" class="btn btn-primary">Apri</a>
+        </div>
+        </div>
+      </div>
+
+      <!--Card 5-->
+      <div class="col-md-4 card-container Photos" data-categoria="partigiana">
+        <div class="card">
+          <img src="catalogo.img/bimbi_treni2.png" class="card-img-top fixed-img" alt="Treni della felicità in stazione">
+        <div class="card-body">
+          <h5 class="card-title">I treni della felicità</h5>
+          <p class="card-text">L'arrivo dei bambini in stazione.</p>
+          <p><strong>Tipo di oggetto:</strong> Foto</p>
+          <p><strong>Data:</strong> 1946</p>
+          <p><strong>Conservazione:</strong><a href="http://viaf.org/viaf/155826643" target="_blank"> Archivio Unione Donne Italiane<sup>VIAF</sup></a></p>
+          <a href="#" class="btn btn-primary">Apri</a>
+        </div>
+        </div>
+      </div> 
+
+      <!--Card 6-->
+      <div class="col-md-4 card-container Text" data-categoria="partito">
+        <div class="card">
+          <img src="catalogo.img/statutopci.png" class="card-img-top fixed-img fixed-img-bottom" alt="Statuto PCI">
+        <div class="card-body">
+          <h5 class="card-title">Le cellule femminili</h5>
+          <p class="card-text">Statuto del PCI: costituzione delle cellule femminili.</p>
+          <p><strong>Tipo di oggetto:</strong> Testo</p>
+          <p><strong>Data:</strong> 1946</p>
+          <p><strong>Curatore:</strong><a href="http://viaf.org/viaf/159457224" target="_blank"> Partito Comunista Italiano<sup>VIAF</sup></a></p>
+          <a href="#" class="btn btn-primary">Apri</a>
+        </div>
+        </div>
+      </div>
+
+      <!--Card 7-->
+      <div class="col-md-4 card-container Photos" data-categoria="partigiana">
+        <div class="card">
+          <img src="catalogo.img/FotoV5.jpg" class="card-img-top fixed-img" alt="Primo piano di Vittorina negli anni Quaranta">
+        <div class="card-body">
+          <h5 class="card-title">Vittorina negli anni Quaranta</h5>
+          <p class="card-text">Ritratto fotografico di Vittorina risalente agli anni Quaranta.</p>
+          <p><strong>Tipo di oggetto:</strong> Foto</p>
+          <p><strong>Data:</strong> Anni Quaranta</p>
+          <p><strong>Soggetto:</strong><a href="http://viaf.org/viaf/22164838899112772634" target="_blank"> Vittorina Dal Monte<sup>VIAF</sup></a></p>
+          <a href="#" class="btn btn-primary">Apri</a>
+        </div>
+        </div>
+      </div>
+
+      <!--Card 8-->
+      <div class="col-md-4 card-container Photos" data-categoria="sindacato">
+        <div class="card">
+          <img src="catalogo.img/mondine.png" class="card-img-top fixed-img" alt="Foto nei campi con le mondine">
+      <div class="card-body">
+        <h5 class="card-title">Dialogo con le mondine</h5>
+        <p class="card-text">Il dialogo con le donne lavoratrici ha rappresentato una costante in tutta l'attività da sindacalista di Vittorina.</p>
+        <p><strong>Tipo di oggetto:</strong> Foto</p>
+        <p><strong>Data:</strong> Giugno 1948</p>
+        <p><strong>Conservazione:</strong><a href="http://viaf.org/viaf/155826643" target="_blank"> Archivio Unione Donne Italiane<sup>VIAF</sup></a></p>
+        <a href="#" class="btn btn-primary">Apri</a>
+          </div>
+      </div>
+      </div>
+
+      <!--Card 9-->
+      <div class="col-md-4 card-container Text" data-categoria="partito">
+        <div class="card">
+          <img src="catalogo.img/quadri.png" class="card-img-top fixed-img fixed-img-top" alt="Appunti lezioni Scuola centrale Quadri PCI">
+      <div class="card-body">
+        <h5 class="card-title">Scuola centrale Quadri PCI</h5>
+        <p class="card-text">Appunti delle lezioni della Scuola Quadri del PCI, frequentata da Vittorina agli albori della sua carriera.</p>
+        <p><strong>Tipo di oggetto:</strong> Testo</p>
+        <p><strong>Data:</strong> 1950</p>
+        <p><strong>Curatore:</strong><a href="http://viaf.org/viaf/159457224" target="_blank"> Partito Comunista Italiano<sup>VIAF</sup></a></p>
+        <a href="#" class="btn btn-primary">Apri</a>
+        </div>
+      </div>
+      </div>
+
+      <!--card 10-->
+      <div class="col-md-4 card-container Photos" data-categoria="partito"> 
+        <div class="card">
+          <img src="catalogo.img/CongressoPCI1950.jpg" class="card-img-top fixed-img" alt="Foto congresso PCI 1950">
+      <div class="card-body">
+        <h5 class="card-title">VII Congresso provinciale PCI, 1950</h5>
+        <p class="card-text">VII Congresso provinciale della Federazione del PCI bolognese, Bologna, 17-20 dicembre 1950.</p>
+        <p><strong>Tipo di oggetto:</strong> Foto</p>
+        <p><strong>Data:</strong> 1950</p>
+        <p><strong>Soggetto:</strong><a href="http://viaf.org/viaf/22164838899112772634" target="_blank"> Vittorina Dal Monte<sup>VIAF</sup></a></p>
+        <a href="#" class="btn btn-primary">Apri</a>
+        </div>
+      </div>
+      </div>
+
+      <!--card 11-->
+      <div class="col-md-4 card-container Posters" data-categoria="partito">
+        <div class="card">
+          <img src="catalogo.img/manifesto-politico.png" class="card-img-top fixed-img" alt="Manifesto politico Due Torri">
+      <div class="card-body">
+        <h5 class="card-title">Manifesto politico Due Torri</h5>
+        <p class="card-text">Manifesto politico del PCI per le elezioni amministrative a Bologna, 1951.</p>
+        <p><strong>Tipo di oggetto:</strong> Manifesto</p>
+        <p><strong>Data pubblicazione:</strong> 1951</p>
+        <p><strong>Autore :</strong><a href="http://viaf.org/viaf/307319006" target="_blank"> Bruno Canova<sup>VIAF</sup></a></p>
+        <a href="#" class="btn btn-primary">Apri</a>
+        </div>
+      </div>
+      </div>
+
+      <!--Card 12-->
+      <div class="col-md-4 card-container Posters" data-categoria="udi">
+        <div class="card">
+          <img src="catalogo.img/congressotorino.jpg" class="card-img-top fixed-img" alt="Manifesto congresso UDI">
+      <div class="card-body">
+        <h5 class="card-title">Congresso della donna torinese</h5>
+        <p class="card-text">Manifesto del Congresso della donna torinese dell'Udi, 1953, la cui conclusione fu affidata a Vittorina.</p>
+        <p><strong>Tipo di oggetto:</strong> Manifesto</p>
+        <p><strong>Data:</strong> 01/06/1953</p>
+        <p><strong>Conservazione:</strong><a href="http://viaf.org/viaf/155826643" target="_blank"> Archivio Unione Donne Italiane<sup>VIAF</sup></a></p>
+        <a href="#" class="btn btn-primary">Apri</a>
+        </div>
+      </div>
+      </div>
+
+      <!--card 13-->
+      <div class="col-md-4 card-container Photos" data-categoria="partito">
+        <div class="card">
+          <img src="catalogo.img/Mosca1954.jpg" class="card-img-top fixed-img" alt="Foto delegazione a Mosca 1954">
+      <div class="card-body">
+        <h5 class="card-title">Il viaggio a Mosca</h5>
+        <p class="card-text">Le delegate del PCI presso l'Università statale Lomonosov, Mosca, luglio 1954.</p>
+        <p><strong>Tipo di oggetto:</strong> Foto</p>
+        <p><strong>Data:</strong> luglio 1954</p>
+        <p><strong>Luogo:</strong><a href="https://www.geonames.org/524901" target="_blank"> Mosca<sup>GEONAME</sup></a></p>
+        <a href="#" class="btn btn-primary">Apri</a>
+        </div>
+      </div>
+      </div>
+
+      <!--card 14-->
+      <div class="col-md-4 card-container Posters" data-categoria="udi">
+        <div class="card">
+          <img src="catalogo.img/udi 8 marzo 55.jpg" class="card-img-top fixed-img fixed-img-top" alt="Manifesto UDI 8 marzo 1955">
+      <div class="card-body">
+        <h5 class="card-title">Manifesto 8 marzo UDI</h5>
+        <p class="card-text">Volantino UDI per l'8 marzo 1955, a dieci anni dalla Resistenza.</p>
+        <p><strong>Tipo di oggetto:</strong> Manifesto</p>
+        <p><strong>Data:</strong> 01/03/1955</p>
+        <p><strong>Conservazione:</strong><a href="http://viaf.org/viaf/155826643" target="_blank"> Archivio Unione Donne Italiane<sup>VIAF</sup></a></p>
+        <a href="#" class="btn btn-primary">Apri</a>
+        </div>
+      </div>
+      </div>
+
+      <!--Card 15-->
+      <div class="col-md-4 card-container Text" data-categoria="partito">
+        <div class="card">
+          <img src="catalogo.img/articolounita.png" class="card-img-top fixed-img" alt="L'Unità Edizione piemontese">
+      <div class="card-body">
+        <h5 class="card-title">L'Unità (ed.piemontese)</h5>
+        <p class="card-text">Articolo de L'Unità sulla Conferenza delle donne comuniste nel giugno 1955, da lei organizzata al Teatro Gobetti di Torino. L'articolo si basa sulla relazione di Vittorina, che in quell'occasione ha tenuto un ricco e acclamato discorso. Si tratta di uno dei momenti di maggiore visibilità della sua carriera.
+        <p><strong>Tipo di oggetto:</strong> Testo</p>
+        <p><strong>Data:</strong> 26/06/1955</p>
+        <p><strong>Pubblicato su:</strong><a href="https://www.wikidata.org/wiki/Q1051163" target="_blank"> L'Unità<sup>WIKIDATA</sup></a></p>
+        <a href="item.html" class="btn btn-primary">Apri</a>
+        </div>
+      </div>
+      </div>
+
+      <!--card 16-->
+      <div class="col-md-4 card-container Photos" data-container="partito">
+        <div class="card">
+          <img src="catalogo.img/FotoV2.png" class="card-img-top fixed-img" alt="Commissione femminile PCI">
+      <div class="card-body">
+        <h5 class="card-title">Commissione femminile PCI</h5>
+        <p class="card-text">Commissione femminile della Federazione del PCI di Bologna, 1947.</p>
+        <p><strong>Tipo di oggetto:</strong> Foto</p>
+        <p><strong>Data:</strong> luglio 1947</p>
+        <p><strong>Soggetto:</strong><a href="http://viaf.org/viaf/22164838899112772634" target="_blank"> Vittorina Dal Monte<sup>VIAF</sup></a></p>
+        <a href="#" class="btn btn-primary">Apri</a>
+        </div>
+      </div>
+      </div>
+
+      <!--card 17-->
+      <div class="col-md-4 card-container Photos" data-categoria="partito">
+        <div class="card">
+          <img src="catalogo.img/LaPasionaria1958.jpg" class="card-img-top fixed-img" alt="Foto di Vittorina con Ines Inberburri">
+      <div class="card-body">
+        <h5 class="card-title">L'incontro con la Pasionaria, 1958</h5>
+        <p class="card-text">Vittorina e altri compagni del partito con Dolores Ibàrruri durante il soggiorno a Soi sul Mar Nero, 1958.</p>
+        <p><strong>Tipo di oggetto:</strong> Foto</p>
+        <p><strong>Data:</strong> 1958</p>
+        <p><strong>Luogo:</strong><a href="https://www.wikidata.org/wiki/Q39420" target="_blank">Soči<sup>WIKIDATA</sup></a></p>
+        <a href="#" class="btn btn-primary">Apri</a>
+        </div>
+      </div>  
+      </div>
+
+      <!--Card 18-->
+      <div class="col-md-4 card-container Posters" data-categoria="sindacato">
+        <div class="card">
+          <img src="catalogo.img/LA-BO-01.jpg" class="card-img-top fixed-img fixed-img-top" alt="Manifesto convegno San Giovanni in Persiceto">
+        <div class="card-body">
+          <h5 class="card-title">L'impegno contro il lavoro a domicilio</h5>
+          <p class="card-text">Manifesto del Convegno a San Giovanni in Persiceto (BO) per il lavoro a domicilio. Nelle carte di Vittorina si trovano resoconti su questo incontro.</p>
+          <p><strong>Tipo di oggetto:</strong> Manifesto</p>
+          <p><strong>Data:</strong> 1966</p>
+          <p><strong>Conservazione:</strong><a href="http://viaf.org/viaf/155826643" target="_blank"> Archivio Unione Donne Italiane<sup>VIAF</sup></a></p>
+          <a href="#" class="btn btn-primary">Apri</a>
+        </div>
+      </div>
+      </div>
+
+      <!--card 19-->
+      <div class="col-md-4 card-container Photos" data-categoria="femminista">
+        <div class="card">
+          <img src="catalogo.img/Manifestazione70.jpg" class="card-img-top fixed-img" alt="Manifestazione femminista anni Settanta">
+      <div class="card-body">
+        <h5 class="card-title">Manifestazione movimento delle donne, Bologna</h5>
+        <p class="card-text">Manifestazione del movimento delle donne, Bologna, anni Settanta.</p>
+        <p><strong>Tipo di oggetto:</strong> Foto</p>
+        <p><strong>Data:</strong> Anni Settanta</p>
+        <p><strong>Luogo:</strong><a href="https://www.geonames.org/3181928" target="_blank">Bologna<sup>GEONAMES</sup></a></p>
+        <a href="#" class="btn btn-primary">Apri</a>
+        </div>
+      </div>
+      </div>
+
+      <!--Card 20-->
+      <div class="col-md-4 card-container Posters" data-categoria="femminista">
+        <div class="card">
+          <img src="catalogo.img/manifestovsviolenza.jpg" class="card-img-top fixed-img fixed-img-top" alt="Manifesto raccolta firme contro violenza sessuale">
+      <div class="card-body">
+        <h5 class="card-title">Raccolta firme contro la violenza sessuale</h5>
+        <p class="card-text">Manifesto per la raccolta firme per il referendum popolare contro la violenza sessuale, che Vittorina contribuì a organizzare.</p>
+        <p><strong>Tipo di oggetto:</strong> Manifesto</p>
+        <p><strong>Data:</strong> 1979</p>
+        <p><strong>Conservazione:</strong><a href="http://viaf.org/viaf/155826643" target="_blank"> Archivio Unione Donne Italiane<sup>VIAF</sup></a></p>
+        <a href="#" class="btn btn-primary">Apri</a>
+        </div>
+      </div>
+      </div>
+
+      <!--Card 21-->
+      <div class="col-md-4 card-container Posters" data-categoria="femminista">
+        <div class="card">
+          <img src="catalogo.img/gruppilettura.jpg" class="card-img-top fixed-img fixed-img-top" alt="Manifesto Biblioteca delle Donne">
+      <div class="card-body">
+        <h5 class="card-title">Biblioteca delle Donne</h5>
+        <p class="card-text">Manifesto con gli orari di apertura della Biblioteca delle Donne, testimonianza dell'attività di Vittorina con il gruppo Orlando negli anni Novanta.</p>
+        <p><strong>Tipo di oggetto:</strong> Manifesto</p>
+        <p><strong>Data:</strong> Anni Novanta</p>
+        <p><strong>Conservazione:</strong><a href="http://viaf.org/viaf/155826643" target="_blank"> Archivio Unione Donne Italiane<sup>VIAF</sup></a></p>
+        <a href="#" class="btn btn-primary">Apri</a>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div> <!--chiudono colonna destra, <div class="col-md-9"> <div class="row"> -->
+      </div>
+      </div> 
+    </div> <!-- chiudono <div class="container-fluid"> <div class="row"> -->
+ì
+    </div> <!-- chiudono <div class="page-container"> <div class="content-wrap">-->
+
+  <div class="pagination justify-content-center mt-4 mb-5">
+        <a href="#">&laquo;</a>
+        <a class="active" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+  </div>
+
+<footer class="footer mt-auto py-4 text-white">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <div class="col-md-4 mb-3">
+        <h5>Contattaci</h5>
+        <p>Email: archiviovdm@progetto.it</p>
+        <p>Sede: Alma Mater Studiorum - Università degli Studi di Bologna, via Zamboni 32</p>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <h5>Link utili</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-white">Il progetto</a></li>
+          <li><a href="chi-siamo.html" class="text-white">Chi siamo</a></li>
+          <li><a href="https://anpiimola.it/vittorina-dal-monte-e-noi-donne-buttammo-giu-il-busto-di-mussolini/" target="_blank" class="text-white">Anpi Imola</a></li>
+          <li><a href="#" class="text-white">Credits</a></li>
+          <li><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" class="text-white">Licenze</a></li>
+        </ul>
+      </div>
+
+      <!-- Social o logo -->
+      <div class="col-md-4 mb-3">
+        <h5>Seguici</h5>
+        <a href="#" class="text-white me-2">Instagram</a>
+        <a href="#" class="text-white">Facebook</a>
+      </div>
+    </div>
+
+    <hr class="border-light">
+    <p class="text-center small">&copy; 2025 Giorgia Clemente - Corso di Digital Humanities</p>
+  </div>
+</footer>
+
+<script src="js/mainjs.js" defer></script>
+
+<!-- Bootstrap JS + jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

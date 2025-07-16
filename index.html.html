@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<!--head-->
+<head>
+	<!--responsive metatag-->
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Sito che raccoglie testimonianze sulla vita e sull'attività politica di Vittorina Del Monte"/>    
+	<meta name="keywords" content="Vittorina Del Monte, archivio, femminismo, lavoro, donne"/>
+	<meta name="author" content="Giorgia Clemente"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+   <!--Dublin core-->
+  <meta name="DC.Title" content="Vittorina Dal Monte: un archivio storico">
+  <meta name="Dc.Creator" content="Giorgia Clemente">
+  <meta name="Dc.Subject" content="Archivio storico di Vittorina Dal Monte">
+  <meta name="Dc.Description" content="Raccolta digitale di materiale di diverso tipo che testimonia l'attività politica di Vittorina Dal Monte">
+  <meta name="Dc.Publisher" content="Università di Bologna">
+  <meta name="Dc.Contributor" content="Corso Digital Humanities">
+  <meta name="Dc.Date" content="14/07/2025">
+  <meta name="Dc.Type" content="Archivio storico">
+  <meta name="Dc.Format" content="HTML/CSS/JAVASCRIPT">
+  <meta name="Dc.Identifier" content="https://giorgiaclem.github.io/archiviovittorinadalmonte/"> 
+  <meta name="Dc.Source" content="E. Guerra, Attraverso il Novecento. Vittorina Dal Monte tra Partito Comunista e movimento delle donne, Roma, Viella, 2021">
+  <meta name="Dc.Language" content="it">
+  <meta name="Dc.Rights" content="Licenza Creative Commons BY-NC-SA 4.0 – https://creativecommons.org/licenses/by-nc-sa/4.0/">
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="stilehomevdm.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Port+Lligat+Slab&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:wght@700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Port+Lligat+Slab&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	
+	<title>Vittorina Dal Monte - Archivio storico</title>
+	<!--favicon personalizzato-->
+	<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+</head>
+
+<body id="index">
+  <div class="page-container">
+    <div class="content-wrap">
+
+  <nav class="navbar navbar-expand-sm bg-white sticky-top">
+  	<a class="navbar-brand navbar-logo ml-3" href="index.html">VITTORINA DAL MONTE</a>
+    <ul class="navbar-nav ml-auto m-3">
+    <li class="nav-item">
+      <a class="nav-link active" href="index.html">HOME</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">IL PROGETTO</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="catalogo.html">CATALOGO</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbardrop">NAVIGA PER</a>
+      <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item" href="#">Luoghi</a>
+        <a class="dropdown-item" href="#">Date</a>
+      </div>
+    </li>
+    </ul>
+    <div class="ms-auto d-flex align-items-center">
+    <!-- Campo di ricerca nascosto -->
+    <form id="search-form" class="d-none me-3">
+      <input class="form-control" type="search" placeholder="Cerca" aria-label="Search">
+    </form>
+   <!-- Icona lente -->
+    <button id="toggle-search" class="btn btn-outline-secondary">
+      <i class="bi bi-search"></i>
+    </button>
+    </div>
+  </nav>
+
+  <section class="hero d-flex justify-content-center align-items-center text-center">
+    <div class="hero-overlay"></div>
+    <div class="hero-content ml-5">
+      <h1 class="display-4 fw-bold">VITTORINA DAL MONTE</h1>
+      <h2 class="lead">UN ARCHIVIO STORICO</h2>
+    </div>
+  </section>
+
+  <section class="bg-pink py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col bio">
+          <h3>Storia di una partigiana, sindacalista, femminista</h3>
+          <p> Nata nel 1922, anno della fondazione del PCI, Vittorina Dal Monte rappresenta uno straordinario esempio di impegno politico e sociale. Ha dedicato tutta la sua vita alla lotta, prima nella Resistenza, poi nel partito e nel sindacato. Instancabile lavoratrice, ha saputo fronteggiare un ambiente connotato ancora dalla predominanza maschile, lottando tenacemente per i diritti delle donne e in particolare delle lavoratrici. Negli ultmi anni della sua vita ha continuato ad impegnarsi attivamente, abbracciando le istanze del neofemminismo.</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <p>Scorri per esplorare ↓</p>
+    </div>
+  </section>
+
+  <section class="timeline-section py-5">
+    <div class="container position-relative">
+      <div class="timeline-line"></div>
+
+      <!-- Evento sinistra -->
+      <div class="row timeline-item mb-5">
+        <div class="col-md-6">
+          <div class="card timeline-card shadow-sm">
+            <div class="card-body">
+              <h6 class="text-right text-pink font-weight-bold">1922/1943</h6>
+              <h5 class="font-weight-bold">Il confino e l'emigrazione</h5>
+              <p>L'infanzia e l'adolescenza di Vittorina sono caratterizzate da continui spostamenti: il soggiorno a Lipari per raggiungere il padre al confino, l'emigrazione clandestina a Parigi, dove frequenta la scuola. Qui si iscrive al Partito Comunista francese. Dopo l'occupazione tedesca, dolorosamente lascia la città francese, a cui si era tanto affezionata, per tornare a Sesto Imolese.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center align-items-start position-relative">
+        </div>
+      </div>
+
+      <!-- Evento destra -->
+      <div class="row timeline-item flex-row-reverse mb-5">
+        <div class="col-md-6">
+          <div class="card timeline-card shadow-sm">
+            <div class="card-body">
+              <h6 class="text-left text-pink font-weight-bold">1943/1946</h6>
+              <h5 class="font-weight-bold">La Resistenza</h5>
+              <p>Vittorina entra a far parte della Sap della pianura imolese, la Squadra di azione patriottica. Partecipa attivamente alla resistenza come staffetta, compiendo le attività più disparate: le corse in bicicletta per portare messaggi o avvertimenti, l'organizzazione di manifestazioni, la difesa dei campi e del bestiame dalle razzie tedesche, il recupero di viveri dal mercato nero per i partigiani. Il suo coinvolgimento è testimoniato dalla tessera di riconoscimento come Partigiana combattente che porta il suo nome. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center align-items-start position-relative">
+        </div>
+      </div>
+
+      <div class="row timeline-item mb-5">
+        <div class="col-md-6">
+          <div class="card timeline-card shadow-sm">
+            <div class="card-body">
+              <h6 class="text-right text-pink font-weight-bold">1946/1952</h6>
+              <h5 class="font-weight-bold">Il PCI</h5>
+              <p>Dal 1946 al 1952 Vittorina Dal Monte è a Bologna, dove fa parte della Commissione femminile del Pci. Nel 1951 viene eletta nel Consiglio provinciale e nella Giunta, all’interno della quale ricopre la carica di assessora.</p>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-6 d-flex justify-content-center align-items-start position-relative">
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="carousel-wrapper mx-auto my-5">
+	 <div id="demo" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+  <!-- Carosello-->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="carosello-1 img-fluid" src="img/FotoV1.jpg" alt="Vittorina Dal Monte negli anni Cinquanta">
+      <div class="carousel-caption"><h3>Ritratto di Vittorina negli anni Cinquanta</h3>
+      </div>
+    </div>
+  <div class="carousel-item">
+      <img class="carosello-2 img-fluid" src="img/FotoV4.jpeg" alt="Manifestazione pro aborto Bologna">
+      <div class="carousel-caption"><h3>Manifestazione pro aborto a Bologna</h3>
+      </div>
+  </div>
+  <div class="carousel-item">
+  		<img class="carosello-3 img-fluid" src="catalogo.img/FotoV6.jpg" alt="Tessera partigiana combattente">
+      <div class="carousel-caption d-none d-md-block">
+        <a href="catalogo.html" class="btn btn-primary" target="_blank">Vai al catalogo</a>
+      </div>
+  </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+  </div>
+
+  <section class="bg-light py-5">
+    <div class="container">
+      <h5 class="mb-4">Esplora l'archivio</h5>
+      <div class="row">
+
+      <!-- Partigiana -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Partigiana</h5>
+            <p class="card-text">La sua lotta durante la Resistenza, inizio di una lunga storia di lotte.</p>
+            <a href="catalogo.html?filtro=partigiana" class="btn btn-primary">Vai alla sezione</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Partito -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Militante del PCI</h5>
+            <p class="card-text">Scopri documenti e foto che raccontano l'impegno di Vittorina nel Partito Comunista Italiano.</p>
+            <a href="catalogo.html?filtro=partito" class="btn btn-primary">Vai alla sezione</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- UDI -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">UDI</h5>
+            <p class="card-text">Dall'associazionismo alla militanza: la sua partecipazione all’Unione Donne Italiane.</p>
+            <a href="catalogo.html?filtro=udi" class="btn btn-primary">Vai alla sezione</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sindacato -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Sindacalista</h5>
+            <p class="card-text">Il dialogo diretto con le lavoratrici è sempre stata una condizione imprescindibile per il suo lavoro.</p>
+            <a href="catalogo.html?filtro=sindacato" class="btn btn-primary">Vai alla sezione</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Femminista -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Femminista</h5>
+            <p class="card-text">Anche dopo la pensione, il suo impegno attivo per i diritti delle donne continua.</p>
+            <a href="catalogo.html?filtro=femminista" class="btn btn-primary">Vai alla sezione</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    </section>
+
+    
+  </div>
+  </div> <!-- chiude page-container e wrap-->
+
+<footer class="footer mt-auto py-4 text-white">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <div class="col-md-4 mb-3">
+        <h5>Contattaci</h5>
+        <p>Email: archiviovdm@progetto.it</p>
+        <p>Sede: Alma Mater Studiorum - Università degli Studi di Bologna, via Zamboni 32</p>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <h5>Link utili</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-white">Il progetto</a></li>
+          <li><a href="chi-siamo.html" class="text-white">Chi siamo</a></li>
+          <li><a href="https://anpiimola.it/vittorina-dal-monte-e-noi-donne-buttammo-giu-il-busto-di-mussolini/" target="_blank" class="text-white">Anpi Imola</a></li>
+          <li><a href="#" class="text-white">Credits</a></li>
+          <li><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" class="text-white">Licenze</a></li>
+        </ul>
+      </div>
+
+      <!-- Social o logo -->
+      <div class="col-md-4 mb-3">
+        <h5>Seguici</h5>
+        <a href="#" class="text-white me-2">Instagram</a>
+        <a href="#" class="text-white">Facebook</a>
+      </div>
+    </div>
+
+    <hr class="border-light">
+    <p class="text-center small">&copy; 2025 Giorgia Clemente - Corso di Digital Humanities</p>
+  </div>
+</footer>
+
+
+<script src="js/mainjs.js" defer>
+</script>
+
+<!-- Bootstrap JS + jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

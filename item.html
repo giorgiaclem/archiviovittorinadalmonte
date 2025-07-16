@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<!--head-->
+<head>
+	<!--responsive metatag-->
+	<meta charset="UTF-8"/>
+	<meta name="description" content="Sito che raccoglie testimonianze sulla vita e sull'attività politica di Vittorina Del Monte"/>   
+	<meta name="keywords" content="Vittorina Del Monte, archivio"/>
+	<meta name="author" content="Giorgia Clemente"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+	 <!--Dublin core-->
+  	<meta name="DC.Title" content="Lotte e speranze delle donne">
+  	<meta name="Dc.Creator" content="Autore sconosciuto">
+  	<meta name="Dc.Subject" content="Condizione femminile; lavoro femminile; disparità salariale;">
+  	<meta name="Dc.Description" content="L'articolo, pubblicato su L'Unità, ed. Piemonte, il 26/06/1955 informa sulla Conferenza delle donne comuniste tenutasi a Torino, al Teatro Gobetti, durante la quale Vittorina Dal Monte ha pronunciato il suo discorso.">
+  	<meta name="Dc.Publisher" content="L'Unità, ed. Piemonte">
+  	<meta name="Dc.Contributor" content="Trascrizione e metadatazione a cura di Giorgia Clemente">
+  	<meta name="Dc.Date" content="1955-06-26">
+  	<meta name="Dc.Type" content="articolo di giornale">
+  	<meta name="Dc.Format" content="text/html">
+  	<meta name="Dc.Identifier" content="https://giorgiaclem.github.io/archiviovittorinadalmonte/">  
+  	<meta name="Dc.Source" content="https://www.giornalidelpiemonte.it/dettaglio.php?testata=L%27Unita%27&data=1955/06/26">
+  	<meta name="Dc.Language" content="it">
+  	<meta name="Dc.Rights" content="Materiale pubblicato per fini didattici e di ricerca, senza scopo di lucro.">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="stilehomevdm.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Port+Lligat+Slab&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=EB+Garamond:wght@700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Port+Lligat+Slab&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<title>Vittorina Dal Monte - Archivio storico</title>
+	<!--favicon personalizzato-->
+	<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+</head>
+
+<body>
+<div class="page-container">
+    <div class="content-wrap">
+
+ <nav class="navbar navbar-expand-sm bg-white sticky-top">
+  	<a class="navbar-brand navbar-logo ml-3" href="index.html">VITTORINA DAL MONTE</a>
+  <ul class="navbar-nav ml-auto m-3">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">HOME</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">IL PROGETTO</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="catalogo.html">CATALOGO</a>
+    </li>
+  	<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbardrop">NAVIGA PER</a>
+  	<div class="dropdown-menu dropdown-menu-right">
+      <a class="dropdown-item" href="#">I luoghi</a>
+      <a class="dropdown-item" href="#">Ordine cronologico</a>
+      <a class="dropdown-item" href="#">Vedere</a>
+    </div>
+  	</li>
+	</ul>
+    <div class="ms-auto d-flex align-items-center">
+    <!-- Campo di ricerca nascosto -->
+    <form id="search-form" class="d-none me-3">
+      <input class="form-control" type="search" placeholder="Cerca" aria-label="Search">
+    </form>
+
+    <!-- Icona lente -->
+    <button id="toggle-search" class="btn btn-outline-secondary">
+      <i class="bi bi-search"></i>
+    </button>
+  </div>
+</nav>
+<script>
+  const toggleBtn = document.getElementById('toggle-search');
+  const searchForm = document.getElementById('search-form');
+
+  toggleBtn.addEventListener('click', () => {
+    searchForm.classList.toggle('d-none');
+  });
+
+</script>
+    <div class="container-fluid">
+    <div class="row">
+    <!-- Colonna sinistra -->
+    <div class="col-md-2">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item" aria-current="page"><a href="catalogo.html">Catalogo</a></li>
+          <li class="breadcrumb-item active">Item</li>
+        </ol>
+      </nav>
+    
+      <div class="vertical-menu">
+      <a href="#" class="active">CATALOGO COMPLETO</a>
+      <a href="#">IL PARTITO</a>
+      <a href="#">UDI</a>
+      <a href="#">PARTIGIANA</a>
+      <a href="#">SINDACALISTA</a>
+      <a href="#">FEMMINISTA</a>
+      </div>
+    </div>
+
+<!-- COLONNA CENTRALE: slideshow + zoom -->
+<main class="col-md-7 pt-4">
+	<h2 class="titolo-item text-center mb-4">L'Unità, ed. Piemonte, 26/06/1955</h2>
+  <div style="text-align: center;">
+    <div style="position: relative; overflow: auto; width: 100%; border: 1px solid #ccc;">
+
+      <!-- Bottoni zoom -->
+      <div style="position: absolute; top: 10px; left: 10px; z-index: 10;">
+        <button onclick="zoomIn()" style="font-size: 18px;">&#x2795;</button>
+        <button onclick="zoomOut()" style="font-size: 18px;">&#x2796;</button>
+      </div>
+
+      <!-- Slideshow container -->
+      <div id="zoom-container" style="overflow: auto; width: 100%; display: flex; justify-content: center;">
+        <img class="slide" src="catalogo.img/item.png" alt="prima parte articolo" style="width: 100%; transform: scale(1); transition: transform 0.3s ease;" />
+        <img class="slide" src="catalogo.img/item2.png" alt="seconda parte articolo" style="width: 100%; transform: scale(1); transition: transform 0.3s ease; display: none;" />
+      </div>
+
+      <!-- Slide controls -->
+      <a class="prev" onclick="plusSlides(-1)" style="position: absolute; top: 50%; left: 0; font-size: 30px; color: black; cursor: pointer; z-index: 10;">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)" style="position: absolute; top: 50%; right: 0; font-size: 30px; color: black; cursor: pointer; z-index: 10;">&#10095;</a>
+
+    </div>
+  </div>
+
+  <div class="card mt-4">
+  <div class="card-body">
+    <div class="card-text-item">
+      <p>"A lei fu affidata l'organizzazione della Conferenza delle donne comuniste che si svolse alla fine di giugno del 1955, tra i primi avvenimenti di rilievo della presenza del partito in città (...). Non mancarono nella relazione di Vittorina i dovuti riferimenti al contesto, esprimendo l'auspicio per un governo che ponesse fine alle discriminazioni e si impegnasse per una politica di pace. Li richiama, per sottolineare l'impegno delle donne nell'attualità del momento politico, il resoconto de "L'Unità" che riserva un ampio spazio alle sue parole. Punteggiato da applausi fu, in effetti, a quanto è dato leggere, un discorso ricco e dettagliato in cui si ritrovano costanti del suo pensiero (...). Fu forse per Vittorina uno dei momenti di maggiore visibilità del periodo torinese, e non dovettero mancare i riconoscimenti per la grande partecipazione di donne a una conferenza convocata in un clima non facile".</p>
+      <p>Con queste parole, Elda Guerra<sup>1</sup>, autrice della biografia di Vittorina Dal Monte, sottolinea il ruolo di rilievo affidato a Vittorina all'interno del partito.</p>
+
+      <p id="nota"><sup>1</sup> E. Guerra, Attraverso il Novecento. Vittorina Dal Monte tra Partito Comunista e movimento delle donne, Roma, Viella, 2021</p>
+    </div>
+    <div class="card-info-item">
+      <table class="tabella-informazioni">
+              <tr>
+                <th>Titolo</th>
+                <td>Lotte e speranze delle donne</td>
+              </tr>
+              <tr>
+                <th>Autore</th>
+                <td>Autore Sconosciuto</td>
+              </tr>
+              <tr>
+                <th>Data</th>
+                <td>26/06/1955</td>
+              </tr>
+              <tr>
+                <th>Oggetto</th>
+                <td>Articolo di giornale</td>
+              </tr>
+              <tr>
+                <th>Supporto</th>
+                <td>Carta</td> 
+              </tr>
+              <tr>
+                <th>Nome quotidiano</th>
+                <td><a href="https://www.wikidata.org/wiki/Q1051163" target="_blank"> L'Unità<sup>WIKIDATA</sup></a></td>
+              </tr>
+              <tr>
+                <th>Luogo di conservazione</th>
+                <td>Archivio storico de L'Unità</td>
+              </tr>
+              <tr>
+                <th>Digitalizzazione</th>
+                <td><a href="https://www.geonames.org/3170831" target="_blank"> Regione Piemonte<sup>GEONAMES</sup></a></td>
+              </tr>
+      </table>
+    </div>
+    <div class="card-link-item">
+      <a href="itemdc.xml" target="_blank">DC/XML</a>
+      <a href="itemtei.xml" target="_blank">TEI/XML</a>
+    </div>
+
+    <div class="mb-4">
+    <div class="btn-group my-custom-group" role="group" aria-label="Filtri di navigazione">
+      <button type="button" class="btn btn-outline-secondary disabled">1955</button>
+      <button type="button" class="btn btn-outline-secondary disabled">Torino</button>
+      <button type="button" class="btn btn-outline-secondary disabled">Il Partito</button>
+      <button type="button" class="btn btn-outline-secondary disabled">Sindacalista</button>
+    </div>
+</div>
+ </div>
+  </div>
+
+
+  <div class="card mt-4">
+    <img src="catalogo.img/cir.png" class="card-img-top img-fluid" alt="Nuvola di parole">
+    <div class="card-body">
+      <h5 class="card-title">Analisi testo articolo</h5>
+      <p class="card-text">
+      Nel discorso, le parole più frequenti – ‘donne’, ‘diritti’, ‘lotta’, ‘sindacato’ – delineano un vocabolario che intreccia militanza, memoria e rivendicazione. Vittorina non parla solo del passato: le sue parole guardano al presente e al futuro delle lavoratrici.</p>
+    <a href="https://voyant-tools.org/?corpus=d61e8b03da1642388e9630da26563064" target="_blank">Voyant Tools</a>
+    </div>
+  </div>
+</main>
+
+<!--Colonna destra-->
+<div class="col-md-3 pt-4">
+  <h4>ITEMS CORRELATI</h4>
+
+  <div class="card mb-3">
+    <img src="catalogo.img/FotoV2.png" class="card-img-top" alt="Commissione femminile PCI">
+    <div class="card-body">
+      <h5 class="card-title">Commissione femminile PCI</h5>
+      <p class="card-text">Commissione femminile della Federazione del PCI di Bologna, 1947.</p>        
+          <p><strong>Tipo di oggetto:</strong> Foto</p>
+          <p><strong>Data:</strong> luglio 1947</p>
+          <p><strong>Soggetto:</strong><a href="http://viaf.org/viaf/22164838899112772634" target="_blank"> Vittorina Dal Monte<sup>VIAF</sup></a></p>
+      <a href="#" class="btn btn-primary">Apri</a>
+    </div>
+  </div>
+
+      <div class="card mb-3">
+        <img src="catalogo.img/congressotorino.jpg" class="card-img-top fixed-img" alt="Manifesto congresso UDI">
+      <div class="card-body">
+        <h5 class="card-title">Congresso della donna torinese</h5>
+        <p class="card-text">Manifesto del Congresso della donna torinese dell'Udi, 1953, la cui conclusione fu affidata a Vittorina.</p>
+        <p><strong>Tipo di oggetto:</strong> Manifesto</p>
+        <p><strong>Data:</strong> 01/06/1953</p>
+        <p><strong>Conservazione:</strong><a href="http://viaf.org/viaf/155826643" target="_blank"> Archivio Unione Donne Italiane<sup>VIAF</sup></a></p>
+        <a href="#" class="btn btn-primary">Apri</a>
+      </div>
+    </div>
+
+      <section class="my-5">
+       <div class="container">
+        <h5 class="map-title mb-3">I luoghi di Vittorina Dal Monte</h5>
+        <p class="map-text">Una mappa interattiva per esplorare i luoghi simbolici della vita di Vittorina a Bologna.</p>
+        <iframe width="100%" height="600px" frameborder="0" allowfullscreen src="https://umap.openstreetmap.fr/it/map/i-luoghi-di-vittorina-dal-monte_1255691">
+        </iframe>
+      </div>
+      </section>
+
+  </div>
+</div>
+</div>
+
+<footer class="footer mt-auto py-4 text-white">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <div class="col-md-4 mb-3">
+        <h5>Contattaci</h5>
+        <p>Email: archiviovdm@progetto.it</p>
+        <p>Sede: Alma Mater Studiorum - Università degli Studi di Bologna, via Zamboni 32</p>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <h5>Link utili</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-white">Il progetto</a></li>
+          <li><a href="chi-siamo.html" class="text-white">Chi siamo</a></li>
+          <li><a href="https://anpiimola.it/vittorina-dal-monte-e-noi-donne-buttammo-giu-il-busto-di-mussolini/" target="_blank" class="text-white">Anpi Imola</a></li>
+          <li><a href="#" class="text-white">Credits</a></li>
+          <li><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.it" class="text-white">Licenze</a></li>
+        </ul>
+      </div>
+
+      <!-- Social o logo -->
+      <div class="col-md-4 mb-3">
+        <h5>Seguici</h5>
+        <a href="#" class="text-white me-2">Instagram</a>
+        <a href="#" class="text-white">Facebook</a>
+      </div>
+    </div>
+
+    <!-- Riga finale -->
+    <hr class="border-light">
+    <p class="text-center small">&copy; 2025 Giorgia Clemente - Corso di Digital Humanities</p>
+  </div>
+</footer>
+
+<script src="js/mainjs.js" defer></script>
+
+  </div>
+</div>

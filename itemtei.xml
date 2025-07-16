@@ -1,0 +1,70 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+  <titleStmt>
+    <title>Lotte e speranze delle donne</title>
+    <author>Sconosciuto</author>
+  </titleStmt>
+  <respStmt>
+  	<resp>Codifica TEI</resp>
+  	<resp>Giorgia Clemente</resp>
+  </respStmt>
+  <publicationStmt>
+    <publisher>Corso di Digital Humanities</publisher>
+    <date when="2025-07-15"/>
+  </publicationStmt>
+  <sourceDesc>
+    <p>Testo tratto dall'edizione digitale de L'Unità</p>
+  </sourceDesc>
+</fileDesc>
+<encodingDesc>
+  <projectDesc>
+    <p>Testo codificato secondo lo standard TEI P5, utilizzando editor Sublime Text.</p>
+  </projectDesc>
+</encodingDesc>
+<profileDesc>
+  <langUsage>
+    <language ident="it">Italiano</language>
+  </langUsage>
+  <textClass>
+    <keywords>
+      <term>Donne</term>
+      <term>Lavoro</term>
+      <term>Politica</term>
+      <tern>Femminismo</tern>
+      <term>Vittorina Dal Monte</term>
+    </keywords>
+  </textClass>
+</profileDesc>
+</teiHeader>
+
+<text>
+<body>
+	<div type="section">
+	<head type="occhiello"><hi rend="uppercase">Pieno successo della conferenza al <name type="place">Teatro Gobetti</name></hi></head>
+	<head type="titolo">Lotte e speranze delle donne</head>
+	<head type="sommario">La relazione della compagna <name xml:id="VittorinaDalMonte" role="speaker" type="person">Vittorina Dal Monte</name> ha esaminato le questioni del lavoro ed economiche che travagliano il mondo femminile -<time when="1955-06-26" calendar="Gregorian">Stamane</time> le conclusioni al <name type="place">Carignano</name></head>
+	</div>
+	<div type="column" n="1">
+		<p><quote><time when="--06">In questi giorni</time> le donne debbono farsi sentire assieme a tutti gli italiani, perché da questa crisi esca fuori un governo che si ispiri agli interessi del popolo. Debbono chiedere che siano liquidate le <term>discriminazioni</term> fra i cittadini, che si applichi la legge che prescrive al padrone nella fabbrica di non abusare del suo potere. Le donne devono soprattutto chiedere che il nuovo governo faccia una politica di <term>pace</term> che tenga conto della nuova situazione internazionale.</quote> In questo passo della relazione della compagna <name role="politician" type="person">Vittorina Dal Monte</name>, che esprime con vivace immediatezza l’adesione ai temi politici del momento attuale e che indica in sintesi il senso della discussione che si è sviluppata <time when="1955-06-25" calendar="Gregorian">ieri</time>, con varietà di argomenti concreti, alla Conferenza delle donne comuniste.<lb/>
+		I lavori della conferenza si sono svolti nella sala del <name type="place">Gobetti</name> in una atmosfera di lieta animazione e di affidabile gentilezza che ha arricchito il tono di questa assise, in cui sono stati portati <term>questioni economiche</term> e <term>temi politici</term> di fondamentale importanza. Alla presidenza dell’assemblea accanto ai compagni <name role="politician" type="person">Negarville</name>, <name role="politician" type="person">Roasio</name>, <name role="politician" type="person">Giachetti</name>, <name role="politician" type="person">Orlandi</name>, <name role="politician" type="person">Camilla Ravera</name>, <name role="politician" type="person">Elvira Paietta</name>, <name role="politician" type="person">Rina Picolato</name>, <name role="politician" type="person">Egidio Sulotto</name>, <name role="politician" type="person">Gisella Floreanini</name>, <name role="politician" type="person">Vittorina Dal Monte</name>, sono state chiamate numerose rappresentanti delle donne lavoratrici. Di esse e dei problemi che quotidianamente sono chiamate ad affrontare nella <term>fabbrica</term> e nella <term>casa</term> si è ampiamente intrattenuta la relazione di <name role="politician" type="person">Vittorina Dal Monte</name><lb/>
+		<rs ref="#VittorinaDalMonte">L’oratrice</rs> ha esordito ricordando che nel decennale della <name type="event">Resistenza</name> si ha il dovere accanto al commosso ricordo di quella lotta, di fare un bilancio del cammino che in questi <date from="1945" to="1955">dieci anni</date> le donne italiane, e l’organizzazione delle donne comuniste, hanno compiuto. Ha ricordato le conquiste civili delle donne, la maggiore consapevolezza che queste hanno acquisito attraverso un’azione ricca di contrasti e disseminata di ostacoli; ed ha ricordato che quanto si è ottenuto non è stato regalato alle donne come un omaggio, ma esse se lo sono dovute conquistare. Se la parola <q>emancipazione</q> <date when="1955" calendar="Gregorian">oggi</date> non si pronuncia con un accento di romantico isolamento, tuttavia essa esprime ancora <date when="1955" calendar="Gregorian">oggi</date> un significato reale e concreto di <term>lotta</term>. Nelle fabbriche, nei campi, negli uffici, nella casa la condizione in cui la donna lavora è ancora una <term>condizione inferiore</term>. Da molti si pone ancora in discussione persino il principio se la donna debba ancora lavorare: ebbene è innanzitutto nel pieno riconoscimento di questo diritto e nella sua difesa, ed è ancora nel riconoscimento della <term>parità del lavoro femminile</term> a quello maschile che la donna si avvia ad acquistare interamente la sua dignità di persona umana; poiché il lavoro la fa ad un tempo padrona della sua</p></div> 
+	<div type="column" n="2">
+		<figure xmlns="http://www.tei-c.org/ns/1.0">
+		<graphic url="catalogo.img/item.png"/>
+		<head>La presidenza della Conferenza mentre parla la compagna <name role="politician" type="person">Dal Monte</name></head>
+		</figure>
+		<p>indipendenza e consapevole delle sue responsabilità.<lb/>
+		Esaminata la composizione della popolazione femminile della provincia di <name type="place">Torino</name> <seg type="parenthetical">in cui sono presenti <num value="123.000">123 mila</num> lavoratrici dell’industri a e del commercio, <num value="15.000">15 mila</num> artigiane, <num value="120.000">120 mila</num> donne appartenenti a famiglie di oltivatori diretti, e ben <num value="250.000">250 mila</num> casalinghe</seg> la compagna <name role="politician" type="person">Dal Monte</name> ha affrontato in concreto i problemi che si pongono a tutte queste grandi categorie di donne.<lb/>
+		In primo luogo il diritto al lavoro non deve significare, come <date when="1955" calendar="Gregorian">oggi</date> in molti casi significa, umiliarsi e rendersi schiava al datore di lavoro. La tecnica delle assunzioni ha abbandonato il suo procedimento legale; si scelgono criteri discriminatori e collocatori che molto spesso domandano alla donna di sacrificare le proprie convinzioni e la propria libertà- si tiene con i <q>contratti a termine</q>ormai generalmente diffusi la lavoratrice sempre sotto l’incubo del licenziamento; e sono tutti questi accorgimenti che permettono di mantenere per la lavoratrice salari di fame.<lb/>
+		A <name type="place">Torino</name> la maggioranza delle lavoratrici sono occupate in industrie comprese nelle zone depresse dal punti di vista salariale <seg type="parenthetical">fabbriche tessili, abbigliamento, alimentazione, commercio</seg> e il loro salario oscilla dalle <num value="20.000">20 mila</num> alle <num value="28.000">28 mila</num> <measure unit="lire">lire</measure> mensili ad orario pieno, mentre in realtà specie fra le tessili oggi la riduzione di orario produce un salario che si aggira dalle <num value="12.000">12</num> alle <num value="15.000">15 mila</num> <measure unit="lire">lire</measure> mensili. E non è che le cose vadano meglio nelle aziende monopolistiche a salari relativamente 
+		più elevati. Proprio in questi settori più scottante si fa sentire il fenomeno della</p></div> 
+	<div type="column" n="3">
+		<p>distanza fra salari maschili e femminili. E non è che alle operaie sia riservato un trattamento diverso e di privilegio: anche per loro il lavoro aumenta, i ritmi 	di lavoro diventano sempre più ossessionanti.<lb/>
+		Vi sono poi donne che lavorano <num value="10">10</num>o <measure value="hour"><num value="12">12</num> ore</measure> al giorno come le <num value="120.000">120 mila</num> coltivatrici dirette, le quali non vengono nemmeno riconosciute come lavoratrici. E vi sono, infine, grande maggioranza di casalinghe: la cui vita si compie nella cerchia chiusa della famiglia, nella quale l’uomo porta il salario e alla donna spetta di preoccuparsi di arrivare con esso alla fine del mese.<lb/>
+		<rs ref="#VittorinaDalMonte">L’oratrice</rs> si è quindi proposta per ciascuna di queste categorie le prospettive di rivendicazioni e gli indirizzi organizzativi che le donne comuniste debbono affrontare. La lotta nelle fabbriche per il riconoscimento della parità del salario femminile, la richiesta di applicazione della legga della maternità, ed ha proposto che si tenga una grande assise per la denuncia delle condizioni in cui lavorano le lavoratrici tessili della provincia e per la rinascita, secondo le indicazioni di una più sana politica economica, di questo gruppo di industrie.<lb/>
+		Dopo la relazione della compagna <name role="politician" type="person">Dal Monte</name>, che è stata sottolineata più volte dagli applausi dell’assemblea, sono intervenute le compagne <orgName>Bristot</orgName> sulle lavoratrici <orgName>RIV</orgName>; <name type="person">Carla Calcatelli</name> che ha portato la fraterna solidarietà delle donne del <orgName type="part">PSI</orgName>; <name type="person">Teresa Fusina</name> sui problemi delle cooperatrici; <name type="person">Maria Barbero</name> che ha presentato esempi di lavoro di una cellula di strada; <name type="person">Anita Trivero</name> che ha documentato in un drammatico intervento la situazione di sfruttamento, di vita mal sana nelle industrie della Valle di Lanzo; Natalina Canavera sui problemi della diffusione della stampa femminile; Clelia Gamba sui rapporti tra la scuola e la famiglia; Wilma Cospiter sulle caratteristiche organizzative della raccolta delle firme per la pace; <name type="person">Letizia Nitto</name> per le donne della<orgName>Superga</orgName>; <name type="person">Ernestina Bertolè</name> per quelle della <orgName>Olivetti</orgName> di <name type="place">Ivrea</name>; <name type="person">Anna Anselmo</name> dello stabilimento <orgName>Lingotto</orgName>. La compagna <name type="person">Rina Picolato</name> ha concluso la discussione ricordando il cammino di lotte e di successi delle donne comuniste.<lb/>
+		I lavori della <orgName type="party">Conferenza</orgName> si concludono <date when="1955-06-26" calendar="Gregorian">stamane</date> al <name type="place">Carignano</name>.</p></div>
+</body>
+</text>
+</TEI>

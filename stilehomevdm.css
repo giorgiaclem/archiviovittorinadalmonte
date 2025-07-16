@@ -1,0 +1,532 @@
+.html, .body {
+    height: 100%;
+}
+
+/* Struttura principale per footer sticky */
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrap {
+    flex: 1;
+}
+
+.navbar {
+  padding: 1.5rem 2rem;
+  min-height: 80px;
+}
+/* Stile logo */
+.navbar-logo {
+  font-family: "EB Garamond", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  color: #d63384;
+}
+
+/* Stile base dei link */
+.navbar .nav-link {
+  position: relative;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 100;
+  color: #808080;
+  transition: color 0.3s ease;
+}
+
+/* Effetto underline animato */
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #d63384;
+  transition: width 0.3s ease;
+}
+
+/* Hover: cambia colore + mostra underline */
+.navbar .nav-link:hover {
+  color: #d63384;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Link attivo: colore rosa, niente underline */
+.nav-link.active {
+  background-color: white;
+  color: #d63384;
+}
+
+.nav-link.active::after {
+  display: none;
+}
+
+/* Niente underline per dropdown "NAVIGA PER" */
+.navbar .nav-link.dropdown-toggle::after {
+  display: none;
+}
+
+
+.hero {
+  position: relative;
+  height: 100vh; /* o ad esempio 70vh se non vuoi occupare tutto lo schermo */
+  background-image: url(img/FotoV5.jpg); 
+  background-attachment: fixed;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(100%);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.6),rgba(255, 255, 255, 0.3)
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* Sopra l’overlay */
+  transform: translateY(-50px);
+}
+
+.hero h1,
+.hero h2 {
+  font-family: "EB Garamond", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  color: #d63384;
+}
+
+.bio h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-variation-settings: 100;
+  color: white;
+}
+
+.bio p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 100;
+  color: white;
+}
+
+.bg-pink {
+  background-color: #d63384;
+}
+
+.column {
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  font-size: 18px;
+}
+
+.column h3 {
+  color: white;
+}
+
+.hero-scroll {
+ position: absolute;
+ bottom: 2rem;
+ left: 50%;
+ transform: translateX(-50%);
+ color: #d63384;
+ font-size: 0.9rem;
+ animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+}
+
+/* Timeline line centrale */
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #d63384;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.timeline-card {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 100;
+  color: #808080;
+}
+
+.timeline-card h5 {
+  font-weight: 700;
+  color: #d63384;
+}
+
+.timeline-card:hover {
+  transform: scale(1.03);
+}
+
+.text-pink {
+  color: #d63384;
+}
+
+/* Per dispositivi piccoli: sposta la linea al centro e impila le card */
+@media (max-width: 767.98px) {
+  .timeline-line {
+    left: 20px;
+    z-index: 5;
+  }
+
+  .timeline-item {
+    flex-direction: column !important;
+  }
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.carousel-wrapper {
+  max-width: 70vw;   /* oppure un valore fisso tipo 900px */
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  width: 100%; 
+  margin: 0; 
+  padding: 0;
+  align-content: center;
+  position: relative; 
+} 
+
+/* Regole generiche per tutte le immagini del carosello */
+.carosello-1,
+.carosello-2,
+.carosello-3 {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Specifica per ciascuna immagine */
+.carosello-1 {
+  object-position: top center;
+}
+
+.carosello-2 {
+  object-position: 50% center;
+}
+
+.carosello-3 {
+  object-position: top center; /* più in basso: si vede meglio il viso */
+}
+
+.carousel-caption {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: 100;
+  color: white;
+}
+
+.footer {
+  background-color: #666666;
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+}
+
+.copyright {
+  background-color: #666666;
+  padding: 15px;
+  text-align: center;
+  color: #1f2e2e;
+  font-size: 15px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.progetto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  width: 100%;
+  background-color: rgba(214, 51, 132, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  gap: 30px;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+}
+
+.progetto img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.testo-progetto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.testo-progetto h3 {
+  margin bottom: 15px;
+  font-size: 24px;
+}
+
+.testo-progetto p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.vertical-menu {
+  width: 200px; 
+}
+
+.vertical-menu a {
+  background-color: white; 
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #808080; 
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+  background-color: white; /* Add a green color to the "active/current" link */
+  color: #d63384;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: white;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #808080;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: white;
+  color: #d63384;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.fixed-img {
+    height: 200px;          
+    object-fit: cover;     
+}
+
+.fixed-img-top {
+  object-position: top center;
+}
+
+.fixed-img-bottom {
+  object-position: bottom center;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+.card a {
+  color: inherit; 
+}
+
+.card a:hover {
+  color: #808080; 
+}
+
+.card-body strong {
+  color: #d63384;
+}
+
+.card-title {
+  font-family: "Roboto", sans-serif;
+  color: #d63384;
+}
+
+.card-text {
+    font-family: "Roboto", sans-serif;
+    max-height: 6rem;       /* circa 3 righe */
+    overflow: hidden;
+    color: #808080;
+}
+
+.btn.btn-primary{
+  background-color:#d63384;   
+  border-color:#80194d;
+}
+
+.btn.btn-primary:hover {
+  background-color: #eeaacc;
+}
+
+
+/* Pagination links */
+.pagination a {
+  color: black;
+  float: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  background-color: #d63384;
+  color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.titolo-item {
+  font-family: "EB Garamond", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #d63384;
+}
+
+.card-text-item {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 100;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 100;
+}
+
+th {
+  color: #d63384;
+  font-weight: bold;
+}
+
+.card-link-item {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-variation-settings: 100;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.col-md-3 h4 {
+  color: #d63384; 
+  margin-bottom: 3rem; /* spazio sotto il titolo */
+}
+
+.my-custom-group .btn {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-variation-settings: 100;
+  padding-left: 15px;
+  color: #d63384;
+  font-weight: bold;
+}
+
+.map-title {
+  font-family: "EB Garamond", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #d63384;
+}
+
+.map-text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-variation-settings: 100;
+}
