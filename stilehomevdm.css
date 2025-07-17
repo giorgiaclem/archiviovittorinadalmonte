@@ -78,7 +78,7 @@
 
 .hero {
   position: relative;
-  height: 100vh; /* o ad esempio 70vh se non vuoi occupare tutto lo schermo */
+  height: 100vh; 
   background-image: url(img/FotoV5.jpg); 
   background-attachment: fixed;
   overflow: hidden;
@@ -224,7 +224,7 @@
 }
 
 .carousel-wrapper {
-  max-width: 70vw;   /* oppure un valore fisso tipo 900px */
+  max-width: 70vw;   
   margin: 0 auto;
 }
 
@@ -258,7 +258,7 @@
 }
 
 .carosello-3 {
-  object-position: top center; /* più in basso: si vede meglio il viso */
+  object-position: top center;
 }
 
 .carousel-caption {
@@ -342,17 +342,17 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #808080; 
-  display: block; /* Make the links appear below each other */
-  padding: 12px; /* Add some padding */
-  text-decoration: none; /* Remove underline from links */
+  display: block; 
+  padding: 12px; 
+  text-decoration: none; 
 }
 
 .vertical-menu a:hover {
-  background-color: #ccc; /* Dark grey background on mouse-over */
+  background-color: #ccc; 
 }
 
 .vertical-menu a.active {
-  background-color: white; /* Add a green color to the "active/current" link */
+  background-color: white; 
   color: #d63384;
 }
 
